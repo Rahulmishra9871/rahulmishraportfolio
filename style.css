@@ -1,0 +1,373 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital@0;1&family=Montserrat:ital,wght@0,400;0,800;1,400&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+:root {
+    --primary-bg-color:#1C2833;
+    --secondary-bg-color: #212F3C;
+    --txt-white:#fff;
+    --primary-txt-color:#28b463;
+    --box-shadow: 10px 8px #28b463
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+    text-decoration: none;
+    /* overflow: hidden; */
+    scroll-behavior: smooth;
+}
+header {
+    color: var(--txt-white);
+    background-color: var(--secondary-bg-color);
+    font-size: 1.5rem;
+    /* min-height: 100vh; */
+    width: 100%;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    width: 100%;
+    background: var(--primary-bg-color);
+}
+a {
+    color:var(--txt-white);
+}
+nav h2 {
+    padding: left 5px;
+}
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 1.4rem;
+    padding: 1.5rem 0.5rem;
+    position: relative;
+    display: inline;
+}
+
+nav ul li a::after {
+    content: "";
+    position: absolute;
+    height: 3px;
+    background: var(--primary-txt-color);
+    left: 0;
+    top: 60px;
+    width: 0%;
+    transition: all .3s ease-in-out;
+}
+
+nav ul li a:hover::after{
+    width: 100%;
+}
+.icons,.icons i{
+    display:none;
+    font-size: 24px;
+    color: #28b463;
+    margin-right:10px
+}
+.social-icons a {
+    padding: 0 1rem;
+    transition: all .3s ;
+}
+
+.social-icons a:hover{
+    color: var(--primary-txt-color);
+}
+.logo {
+    color: var(--primary-txt-color);
+    font-size: 2rem;
+}
+
+
+main{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    background-color: #212F3C;
+    color: #fff;
+    padding: 20px;
+}
+
+.about-left{
+    width: 70%;
+}
+.about-left h1{
+    padding: 15px 0px;
+    font-size: 48px;
+}
+.about-left h1 span {
+    color: #28b463;
+}
+.about-left p {
+    text-align: start;
+    font-size: 20px;
+    font-family: lato;
+    padding: 10px 50px 10px 0;
+}
+.about-right{
+    width: 30%;
+    padding: 20px 40px;
+}
+.about-right img{
+    transform: skew(-10deg) ;
+    box-shadow: 10px 10px #28b463;
+    margin-left: 10px;
+    border-radius: 10px;
+}
+
+.container button {
+    display: inline-block;
+    background: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+    padding: 1rem 2rem;
+    margin: 2rem 2rem 0 0;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 2px;
+    transition: all 0.5s;
+}
+.container button:hover {
+    background: var(--primary-txt-color);
+    border: none;
+    padding: 1rem 3rem;
+}
+
+.container button:active{
+    transform: scale(0.95);
+}
+
+.myskills{
+    background-color: #1C2833;
+    color: #28b463;
+    width: 100%;
+}
+
+.skills{
+    background-color: #1C2833;
+    color: #fff;
+    width: 100%;
+    display: flex;
+}
+.myskills{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+}
+.myskills h3{
+    font-size: 36px;
+}
+.myskills h3 i{
+    margin-left: -113px;
+} 
+
+.skill{
+    width: 80%;
+    padding: 20px;
+
+}
+
+.skill section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.skill section h3{
+    font-size: 36px;
+    margin-right: 40px;
+    padding: 20px;
+    width: 50%;
+    text-align: center;
+}
+
+.skill section div{
+    text-align: center;
+    margin-right: auto;
+    width: 50%;
+}
+
+.skill section div i{
+    font-size: 20px;
+}
+
+.certifications{
+    width: 100%;
+    background-color: #212F3C;
+    color: #28b463;
+    text-align: center;
+    padding: 20px;
+}
+.certifications h2{
+    font-size: 36px;
+    padding-top: 20px;
+}
+
+.cert-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    background-color: #212F3C;
+    color: #fff;
+    padding: 10px 5px;
+}
+.cert-container .cert-row1, .cert-container .cert-row2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+.cert-container img{
+    width: 200px;
+    height: 200px;
+    transition: all ease 1s;
+    margin: 15px;
+}
+.cert-container img:hover{
+    transform: rotateY(180deg);
+}
+
+.cert-container h4,.cert-container p{
+    margin: 6px 2px;
+    text-align: center;
+}
+
+.projects{
+    width: 100%;
+    background-color: #1C2833;
+    color: #fff;
+}
+
+.projects section{
+    width: 100%;
+    color: #28b463;
+    font-size: 36px;
+    font-weight: bold;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.projects-items{
+    display: flex;
+    /* flex-direction: column; */
+    /* background-color: white; */
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 5% 0;
+}
+
+.project{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    background-color: #fff;
+    margin: 10px 5px 10px 5px;
+    align-items: center;
+    border-radius: 10px;
+    
+}
+.project img{
+    width: 250px;
+    height: 200px;
+    border-radius: 35px;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+.project p{
+    color: black;
+    font-size: 16px;
+    text-align: center;
+    justify-content: center;
+    padding: 5px 7px;
+}
+
+.view{
+    margin-bottom: 7px;
+    padding: 5px;
+    background-color: #28b463;
+    color: #fff;
+    border: 1px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+footer{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    background-color: #212F3C;
+    color: #fff;
+}
+
+/* Adding media querry */
+@media only screen  and (max-width: 700px){
+    .logo h2{
+        font-size: 24px;
+        margin-left:20px
+    }
+    .links{
+        display: none;
+    }
+    .links{
+        background-color: #1C2833;
+        width: 50%;
+        position: absolute;
+        top: 80px;
+        right: 0;
+        text-align: center;
+        
+        z-index: 10;
+    }
+    .links li{
+        display: block;
+        margin: 10px 0;
+    }
+    .container{
+        flex-direction: column-reverse;
+
+    }
+    .about-left{
+        width: 100%;
+        text-align: center;
+    }
+
+    .about-left p{
+        padding : 10px 20px;
+    }
+    .about-right{
+        width: 100%;
+        text-align: center;
+    }
+    .icons{
+        display: block;
+        cursor: pointer;
+    }
+    .icons .menu{
+        display: block;
+        cursor: pointer;
+
+    }
+    .skill .html h3{
+        font-size: 24px;
+    }
+    .skill .html .stars{
+        font-size: 16px;
+    }
+    .cert-container .cert-row1, .cert-container .cert-row2 {
+        display: flex;
+        flex-direction: column;
+    }
+}
