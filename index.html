@@ -4,6 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
@@ -17,7 +22,7 @@
     <header>
       <nav>
         <a href="#" class="logo">
-          <h2>Rahul</h2>
+          <h2 class="text">Rahul</h2>
         </a>
         <ul class="links">
           <li><a href="#about">About</a></li>
@@ -34,7 +39,7 @@
     </header>
     <main class="container">
       <div class="about-left" id="about">
-        <h1>I am a <span>Frontend Developer</span></h1>
+        <h1 class="text"><span id="element"></span></h1>
         <p>
           As a passionate Frontend Web Developer, I specialize in crafting
           engaging user experiences and intuitive interfaces that delight users.
@@ -64,7 +69,7 @@
       </div>
     </main>
 
-    <div class="myskills">
+    <div class="myskills wow animate__animated animate__fadeInUp">
       <h3>Skills</h3>
     </div>
     <section class="skills" id="skills">
@@ -119,119 +124,112 @@
         </section>
       </div>
     </section>
-    <div class="certifications" id="certifications">
-      <h2>Certifications</h2>
-    </div>
-    <div class="cert-container">
-      <div class="cert-row1">
-        <div class="certificate-item">
-          <img src="assets/glhtml.jpg" alt="HTML Certificate" />
-          <h4>HTML5 certification</h4>
-          <p>from Great Learning</p>
+    <section class="main-03 wow animate__animated animate__backInRight">
+      <div class="certifications" id="certifications">
+        <h2>Certifications</h2>
+      </div>
+      <div class="cert-container">
+        <div class="cert-row1">
+          <div class="certificate-item">
+            <img src="assets/glhtml.jpg" alt="HTML Certificate" />
+            <h4>HTML5 certification</h4>
+            <p>from Great Learning</p>
+          </div>
+          <div class="certificate-item">
+            <img src="assets/glcss.jpg" alt="CSS Certificate" />
+            <h4>CSS3 certification</h4>
+            <p>from Great Learning</p>
+          </div>
+          <div class="certificate-item">
+            <img src="assets/js.JPG" alt="Certificate 1" />
+            <h4>JAVASCRIPT certification</h4>
+            <p>from SoloLearn</p>
+          </div>
         </div>
-        <div class="certificate-item">
-          <img src="assets/glcss.jpg" alt="CSS Certificate" />
-          <h4>CSS3 certification</h4>
-          <p>from Great Learning</p>
-        </div>
-        <div class="certificate-item">
-          <img src="assets/js.JPG" alt="Certificate 1" />
-          <h4>JAVASCRIPT certification</h4>
-          <p>from SoloLearn</p>
+        <div class="cert-row2">
+          <div class="certificate-item">
+            <img src="assets/glfed.jpg" alt="Certificate 1" />
+            <h4>Frontend Development</h4>
+            <p>certification from Great Learning</p>
+          </div>
+          <div class="certificate-item">
+            <img src="assets/glfed.jpg" alt="Certificate 1" />
+            <h4>Frontend Development</h4>
+            <p>certification from Great Learning</p>
+          </div>
+          <div class="certificate-item">
+            <img src="assets/glfed.jpg" alt="Certificate 1" />
+            <h4>Frontend Development</h4>
+            <p>certification from Great Learning</p>
+          </div>
         </div>
       </div>
-      <div class="cert-row2">
-        <div class="certificate-item">
-          <img src="assets/glfed.jpg" alt="Certificate 1" />
-          <h4>Frontend Development</h4>
-          <p>certification from Great Learning</p>
-        </div>
-        <div class="certificate-item">
-          <img src="assets/glfed.jpg" alt="Certificate 1" />
-          <h4>Frontend Development</h4>
-          <p>certification from Great Learning</p>
-        </div>
-        <div class="certificate-item">
-          <img src="assets/glfed.jpg" alt="Certificate 1" />
-          <h4>Frontend Development</h4>
-          <p>certification from Great Learning</p>
-        </div>
-      </div>
-    </div>
+    </section>
     <!-- Projects section -->
-    <div class="projects" id="projects">
-      <section>Projects</section>
-      <div class="projects-items">
-        <div class="project">
-          <img src="assets/spotify.jpg" alt="" />
-          <p>Built a spotify clone using</p>
-          <p>Html,Css and JavaScript</p>
-          <button class="view">View</button>
-        </div>
-        <div class="project">
-          <img src="assets/netflix.jpg" alt="" />
-          <p>Built a spotify clone using</p>
-          <p>Html,Css and JavaScript</p>
-          <button class="view">View</button>
-        </div>
-        <div class="project">
-          <img src="assets/quiz.png" alt="" />
-          <p>Built a spotify clone using</p>
-          <p>Html,Css and JavaScript</p>
-          <button class="view">
-            <a
-              href="https://hilarious-frangipane-ecec7d.netlify.app"
-              target="_blank"
-              >View</a
-            >
-          </button>
-        </div>
-        <div class="project">
-          <img src="assets/tictactoe.jpeg" alt="" />
-          <p>Built a spotify clone using</p>
-          <p>Html,Css and JavaScript</p>
-          <button class="view">View</button>
-        </div>
-        <div class="project">
-          <img src="assets/qrcode.jpeg" alt="" />
-          <p>Built a spotify clone using</p>
-          <p>Html,Css and JavaScript</p>
-          <button class="view">
-            <a href="qrcodebyrahul.netlify.app" target="_blank">View</a>
-          </button>
-        </div>
-        <div class="project">
-          <img src="assets/calc.png" alt="" />
-          <p>Built a spotify clone using</p>
-          <p>Html,Css and JavaScript</p>
-          <button class="view">View</button>
-        </div>
-        <div class="project">
-          <img src="assets/calc.png" alt="" />
-          <p>Built a spotify clone using</p>
-          <p>Html,Css and JavaScript</p>
-          <button class="view">View</button>
-        </div>
-        <div class="project">
-          <img src="assets/calc.png" alt="" />
-          <p>Built a spotify clone using</p>
-          <p>Html,Css and JavaScript</p>
-          <button class="view">View</button>
-        </div>
-        <div class="project">
-          <img src="assets/calc.png" alt="" />
-          <p>Built a spotify clone using</p>
-          <p>Html,Css and JavaScript</p>
-          <button class="view">View</button>
-        </div>
-        <div class="project">
-          <img src="assets/calc.png" alt="" />
-          <p>Built a spotify clone using</p>
-          <p>Html,Css and JavaScript</p>
-          <button class="view">View</button>
+    <section class="main-04">
+      <div class="projects" id="projects">
+        <section>Projects</section>
+        <div class="projects-items">
+          <div class="project">
+            <img src="assets/spotify.jpg" alt="" />
+            <p>Built a spotify clone using</p>
+            <p>Html,Css and JavaScript</p>
+            <button class="view">View</button>
+          </div>
+          <div class="project">
+            <img src="assets/netflix.jpg" alt="" />
+            <p>Built a netflix clone using</p>
+            <p>Html,Css and JavaScript</p>
+            <button class="view">View</button>
+          </div>
+          <div class="project">
+            <img src="assets/quiz.png" alt="" />
+            <p>Built a quiz app using</p>
+            <p>Html,Css and JavaScript</p>
+            <button class="view">
+              <a href="https://jsquizbyrahul.netlify.app/" target="_blank"
+                >View</a
+              >
+            </button>
+          </div>
+          <div class="project">
+            <img src="assets/tictactoe.jpeg" alt="" />
+            <p>Built Tic-tac-toe game using</p>
+            <p>Html,Css and JavaScript</p>
+            <button class="view">View</button>
+          </div>
+          <div class="project">
+            <img src="assets/qrcode.jpeg" alt="" />
+            <p>Built a QR code Generator using</p>
+            <p>Html,Css and JavaScript</p>
+            <button class="view">
+              <a href="qrcodebyrahul.netlify.app" target="_blank">View</a>
+            </button>
+          </div>
+          <div class="project">
+            <img src="assets/calc.png" alt="" />
+            <p>Built a calculator using</p>
+            <p>Html,Css and JavaScript</p>
+            <button class="view">
+              <a href="https://nowdocalculate.netlify.app/">View</a>
+            </button>
+          </div>
+
+          <div class="project">
+            <img src="assets/newsapp.jpg" alt="" />
+            <p>Built a News App using</p>
+            <p>Html,Css and JavaScript</p>
+            <button class="view">View</button>
+          </div>
+          <div class="project">
+            <img src="assets/passgen.jpg" alt="" />
+            <p>Built a Password Generator using</p>
+            <p>Html,Css and JavaScript</p>
+            <button class="view">View</button>
+          </div>
         </div>
       </div>
-    </div>
+    </section>
     <footer id="contact">
       <div class="social-icons">
         <a
@@ -259,6 +257,7 @@
         ></a>
       </div>
     </footer>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
 
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
@@ -266,6 +265,30 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"
+      integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
     <script src="script.js"></script>
+    <script>
+      new WOW().init({ offset: 40 });
+
+      var typed = new Typed("#element", {
+        strings: [
+          "I am a Frontend Developer.",
+          "I am a Backend Developer.",
+          "I am a Python Developer.",
+        ],
+        typeSpeed: 50,
+        loop: true,
+        loopCount: Infinity,
+        backSpeed: 50,
+        smartBackspace: true,
+        startDelay: 3000,
+      });
+    </script>
   </body>
 </html>

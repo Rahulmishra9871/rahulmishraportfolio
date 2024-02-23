@@ -1,3 +1,5 @@
+new WOW().init();
+// gsap.registerPlugin(ScrollTrigger);
 var tl = gsap.timeline();
 
 tl.from("nav h2,nav ul", {
@@ -16,12 +18,7 @@ tl.from(".container .about-left p", {
   duration: 2,
 });
 tl.from(".container .about-right img", {
-  scale: 0,
-  opacity: 0,
-  duration: 1,
-});
-tl.from(".myskills h3,.html", {
-  y: 100,
+  x: 100,
   opacity: 0,
   duration: 1,
 });
