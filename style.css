@@ -49,6 +49,10 @@ nav ul li {
     display: inline;
 }
 
+nav ul li:hover{
+    text-shadow: 0 0 20px #00fffb, 0 0 40px #0081bc; 
+}
+
 nav ul li a::after {
     content: "";
     position: absolute;
