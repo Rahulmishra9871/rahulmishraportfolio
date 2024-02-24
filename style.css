@@ -4,8 +4,8 @@
     --primary-bg-color:#1C2833;
     --secondary-bg-color: #212F3C;
     --txt-white:#fff;
-    --primary-txt-color:#28b463;
-    --box-shadow: 10px 8px #28b463
+    --primary-txt-color:#00fffb;
+    --box-shadow: 10px 8px #00fffb
 }
 *{
     box-sizing: border-box;
@@ -66,17 +66,10 @@ nav ul li a:hover::after{
 .icons,.icons i{
     display:none;
     font-size: 24px;
-    color: #28b463;
+    color: #00fffb;
     margin-right:10px
 }
-.social-icons a {
-    padding: 0 1rem;
-    transition: all .3s ;
-}
 
-.social-icons a:hover{
-    color: var(--primary-txt-color);
-}
 .logo {
     /* color: var(--primary-txt-color); */
     font-size: 2rem;
@@ -145,7 +138,7 @@ main{
 
 .myskills{
     background-color: #1C2833;
-    color: #28b463;
+    color: #00fffb;
     width: 100%;
 }
 
@@ -201,7 +194,7 @@ main{
 .certifications{
     width: 100%;
     background-color: #212F3C;
-    color: #28b463;
+    color: #00fffb;
     text-align: center;
     padding: 20px;
 }
@@ -251,7 +244,7 @@ main{
 
 .projects section{
     width: 100%;
-    color: rgb(40, 180, 99);
+    color: #00fffb;
     font-size: 36px;
     font-weight: bold;
     padding: 10px 50px;
@@ -279,8 +272,13 @@ main{
     align-items: center;
     border-radius: 10px;
     box-shadow: 0 0 20px rgba(40,180,99,0.5);
-    
+    transition: all 0.3s ease;
 }
+
+.project:hover{
+    transform: translateY(-5px);
+}
+
 .project img{
     width: 250px;
     height: 200px;
@@ -300,7 +298,7 @@ main{
 .view{
     margin-bottom: 7px;
     padding: 5px;
-    background-color: #28b463;
+    background-color: rgb(40, 180, 99);
     color: #fff;
     border: 1px solid black;
     border-radius: 5px;
@@ -315,6 +313,16 @@ footer{
     padding: 50px;
     background-color: #212F3C;
     color: #fff;
+}
+
+.social-icons a {
+    padding: 0 1rem;
+    transition: all .3s ;
+}
+
+.social-icons a:hover{
+    color: var(--primary-txt-color);
+    text-shadow: 2px 2px 5px #0081bc;
 }
 
 /* Adding media querry */

@@ -2,11 +2,11 @@ new WOW().init();
 // gsap.registerPlugin(ScrollTrigger);
 var tl = gsap.timeline();
 
-tl.from("nav h2,nav ul", {
+tl.from("nav h2,nav ul,nav .icons", {
   y: -100,
   opacity: 0,
   duration: 2,
-  stagger: 1,
+  // stagger: 1,
 });
 tl.from(".container .about-left h1", {
   x: -100,
