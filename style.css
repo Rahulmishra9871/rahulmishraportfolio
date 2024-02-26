@@ -418,6 +418,11 @@ footer{
     .skill .html h3{
         font-size: 14px;
     }
+
+    .skill .html h3 img{
+        width: 20px;
+        height: 20px;
+    }
     .skill .html .stars .fa-star{
         font-size: 8px;
     }
@@ -504,6 +509,10 @@ footer{
 
     .skill section h3{
         width: 60%;
+    }
+    .skill .html h3 img{
+        width: 20px;
+        height: 20px;
     }
 
     .skill section div{
