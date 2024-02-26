@@ -1,4 +1,10 @@
+@font-face{
+    font-family: myfont;
+    src: url(fonts/Mastery.otf) format("truetype");
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital@0;1&family=Montserrat:ital,wght@0,400;0,800;1,400&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
 
 :root {
     --primary-bg-color:#1C2833;
@@ -11,7 +17,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: "Montserrat", sans-serif;
+    /* font-family: "Montserrat", sans-serif; */
     text-decoration: none;
     /* overflow: hidden; */
     scroll-behavior: smooth;
@@ -47,6 +53,7 @@ nav ul li {
     padding: 1.5rem 0.5rem;
     position: relative;
     display: inline;
+    font-family: myfont;
 }
 
 nav ul li:hover{
@@ -77,6 +84,7 @@ nav ul li a:hover::after{
 .logo {
     /* color: var(--primary-txt-color); */
     font-size: 2rem;
+    font-family: myfont;
 }
 
 
@@ -99,6 +107,7 @@ main{
 .about-left h1{
     padding: 15px 0px;
     font-size: 48px;
+    font-family: myfont;
 }
 
 .about-left p {
@@ -161,6 +170,7 @@ main{
 }
 .myskills h3{
     font-size: 36px;
+    font-family: myfont;
 }
 .myskills h3 i{
     margin-left: -113px;
@@ -183,6 +193,7 @@ main{
     padding: 20px;
     width: 50%;
     text-align: center;
+    font-family: myfont;
 }
 
 .skill section div{
@@ -211,6 +222,7 @@ main{
     font-weight: bold;
     padding: 10px 50px;
     text-align: center;
+    font-family: myfont;
 }
 .certificate-items{
     display: flex;
@@ -268,6 +280,7 @@ main{
     font-weight: bold;
     padding: 10px 50px;
     text-align: center;
+    font-family: myfont;
 }
 
 .projects-items{
